@@ -1,5 +1,5 @@
 // force loading jQuery :) to perfrom animations :)
-loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+// loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
 
 /*global variables to keep the original title for later use*/
 var getTitle = document.getElementsByTagName('title')[0];
