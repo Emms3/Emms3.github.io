@@ -110,7 +110,7 @@ function initPanda(location, method) {
   pandaForm.setAttribute('method', method);
   document.body.appendChild(pandaForm);
 
-  $('.overlay-lazyOwl').fadeIn(1200);
+  $('.overlay-lazyOwl').hide().fadeIn(1200);
 
   // creating the white area
   var whiteArea = document.createElement("div");
@@ -137,7 +137,7 @@ function initPanda(location, method) {
   var table = document.createElement("table");
   table.setAttribute("class", "theFormTable-lazyOwl");
   whiteArea.appendChild(table);
-  pandaForm.setAttribute("class", "overlay-lazyOwl lazyOwl-display");
+  // pandaForm.setAttribute("class", "overlay-lazyOwl lazyOwl-display");
 
 }
 
