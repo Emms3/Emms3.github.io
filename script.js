@@ -283,11 +283,13 @@ function off() {
   console.log('form has been deleted');
 
   var list = document.getElementsByClassName("overlay-lazyOwl");
-  $(list).fadeOut(1200).delay(1000);
+  $(list).fadeOut(1200);
+  setTimeout(function(){
+    for(var i = list.length - 1; 0 <= i; i--)
+    if(list[i] && list[i].parentElement)
+    list[i].parentElement.removeChild(list[i]);
 
-  for(var i = list.length - 1; 0 <= i; i--)
-  if(list[i] && list[i].parentElement)
-  list[i].parentElement.removeChild(list[i]);
+  }, 2000);
 
 }
 
