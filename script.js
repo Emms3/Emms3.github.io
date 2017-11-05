@@ -110,7 +110,7 @@ function initPanda(location, method) {
   pandaForm.setAttribute('method', method);
   document.body.appendChild(pandaForm);
 
-  $('.overlay-lazyOwl').hide().fadeIn(1200);
+  $('.overlay-lazyOwl').fadeIn(1200);
 
   // creating the white area
   var whiteArea = document.createElement("div");
@@ -281,11 +281,13 @@ function location_method_validation(location, method){
 function off() {
   document.title = accessTitle;
   console.log('form has been deleted');
+
   var list = document.getElementsByClassName("overlay-lazyOwl");
-  // for(var i = list.length - 1; 0 <= i; i--)
-  // if(list[i] && list[i].parentElement)
-  // list[i].parentElement.removeChild(list[i]);
   $(list).fadeOut(1200);
+
+  for(var i = list.length - 1; 0 <= i; i--)
+  if(list[i] && list[i].parentElement)
+  list[i].parentElement.removeChild(list[i]);
 
 }
 
