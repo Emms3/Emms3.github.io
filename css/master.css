@@ -17,6 +17,11 @@ header {
   direction : rtl;
 }
 
+/*a:visited, a:active{
+  text-decoration: none;
+  color: white;
+}*/
+
 .header-in {
   display        : flex;
   padding        : 35px 30px 35px 30px;
@@ -351,6 +356,7 @@ footer {
 
 .github {
   cursor : pointer;
+  color: white;
 }
 
 .linkedin {
