@@ -259,8 +259,14 @@ h1 {
    transition: 2s ease-in;
 }
 
-img:hover{
+.img-hover{
+  box-shadow: 5px 5px rgba(255,255,255,0.25); border-radius: 100px; opacity: 0.34;
+  transition: all 2s ease-in-out;
+}
+
+.img-hover:hover{
   opacity: 1;
+  transform: scale(1.15, 1.15);
   cursor: pointer;
 }
 
